@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>웹 페이지 테스트</title>
+
+    <!-- 내부 스타일 시트 -->
+    <!-- <style>
+      p {
+        background-color: burlywood;
+        opacity: 0.5;
+      }
+
+      div {
+        background-color: red;
+      }
+    </style> -->
+    <!-- 외부 스타일 시트 -->
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <!-- 주석 단축키: Ctrl + / -->
@@ -23,9 +37,9 @@
     <!-- 제목 태그 -->
     <!-- h$*6{h$ 태그입니다.} -->
     <h1>h1 태그입니다.</h1>
-    <h2>h2 태그입니다.</h2>
+    <h2 class="text-box">h2 태그입니다.</h2>
     <h3>h3 태그입니다.</h3>
-    <h4>h4 태그입니다.</h4>
+    <h4 class="text-box">h4 태그입니다.</h4>
     <h5>h5 태그입니다.</h5>
     <h6>h6 태그입니다.</h6>
 
@@ -108,7 +122,7 @@
                 <ol>
                   <li>
                     <p>자식 3</p>
-                    <p>ol은 자식요소가 동일</p>
+                    <p>ol은 모든 자식요소가 동일하다.</p>
                   </li>
                 </ol>
               </li>
@@ -118,6 +132,14 @@
       </li>
     </ol>
 
-    <!-- Form -->
+    <!-- 스타일 -->
+    <div id="text-block">
+      <p class="text-box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, minus
+        eveniet? Recusandae laboriosam numquam, error magnam impedit earum
+        excepturi repudiandae laborum debitis doloremque eaque velit? Officia
+        culpa facilis unde doloribus.
+      </p>
+    </div>
   </body>
 </html>

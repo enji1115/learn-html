@@ -1,0 +1,31 @@
+/* div {
+  padding: 20px;
+  background-color: aqua;
+} */
+
+/* ID 선택자 */
+#text-block {
+  padding: 20px;
+  background-color: rgb(0, 30, 30);
+}
+
+/* 클래스 선택자*/
+.text-box {
+  color: white;
+  background-color: rgb(0, 30, 30);
+  opacity: 0.8;
+}
+
+/* 자손 선택 */
+body div {
+}
+/* 자식 선택 */
+body > div {
+}
+
+/* 인접 형제 */
+h2 + ul {
+}
+/* 일반 형제 */
+h2 ~ ul {
+}
