@@ -12,21 +12,21 @@
     <form>
       <h5>로그인 해주세요</h5>
       <div>
-        ID:
+        <label for="userID">ID:</label>
         <input
           type="text"
           name="userID"
-          id=""
+          id="userID"
           placeholder="아이디를 입력해 주세요"
           required
         />
       </div>
       <div>
-        Password:
+        <label for="userPassword">Password:</label>
         <input
           type="password"
           name="userPassword"
-          id=""
+          id="userPassword"
           placeholder="비밀번호를 입력해 주세요"
           required
         />
@@ -34,6 +34,54 @@
       <input type="submit" value="로그인" />
       <!-- // 아래거는 나중에 -->
       <!-- <button type="submit">로그인</button> -->
+    </form>
+
+    <form>
+      <!-- 체크박스 -->
+      <h5>개발환경 설치</h5>
+      <input
+        type="checkbox"
+        name="setup"
+        id="setup-vscode"
+        value="vscode"
+        checked
+      />
+      <label for="setup-vscode">VS Code 설치</label>
+
+      <input
+        type="checkbox"
+        name="setup"
+        id="setup-node"
+        value="node"
+        checked
+      />
+      <label for="setup-node">Node 설치</label>
+
+      <input type="checkbox" name="setup" id="setup-git" value="git" checked />
+      <label for="setup-git">Git 설치</label>
+
+      <input
+        type="checkbox"
+        name="setup"
+        id="setup-claudecode"
+        value="claudecode"
+      />
+      <label for="setup-claudecode">클로드 코드 설치</label>
+
+      <!-- 라디오 -->
+      <h5>강의 난이도</h5>
+      <input
+        type="radio"
+        name="level"
+        id="level-beginner"
+        value="beginner"
+        checked
+      />
+      <label for="level-beginner">입문</label>
+      <input type="radio" name="level" id="level-middle" value="middle" />
+      <label for="level-middle">중급</label>
+      <input type="radio" name="level" id="level-advanced" value="advanced" />
+      <label for="level-advanced">고급</label>
     </form>
   </body>
 </html>
